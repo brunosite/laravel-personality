@@ -15,7 +15,7 @@ The customizable framework for agility for installation and preparation of the e
 > [laravel-modules](https://github.com/nWidart/laravel-modules) @nWidart
 
 ## Providers
-
+```php
     'providers' => [
         // ...
         Cviebrock\EloquentSluggable\ServiceProvider::class,
@@ -25,8 +25,9 @@ The customizable framework for agility for installation and preparation of the e
         Prettus\Repository\Providers\RepositoryServiceProvider::class,
         Nwidart\Modules\LaravelModulesServiceProvider::class,
     ];
-
+```
 ## Aliases
+```php
     'aliases' => [
         //...
         'Form' => Collective\Html\FormFacade::class,
@@ -34,14 +35,15 @@ The customizable framework for agility for installation and preparation of the e
         'AdminLTE' => Acacha\AdminLTETemplateLaravel\Facades\AdminLTE::class,
         'Module' => Nwidart\Modules\Facades\Module::class,
     ],
-
+```
 ## Publish
+```shell
     php artisan vendor:publish --provider="Cviebrock\EloquentSluggable\ServiceProvider"
     php artisan vendor:publish --provider="Laracasts\Flash\FlashServiceProvider"
     php artisan vendor:publish --tag=adminlte --force
     php artisan vendor:publish --provider "Prettus\Repository\Providers\RepositoryServiceProvider"
     php artisan vendor:publish --provider="Nwidart\Modules\LaravelModulesServiceProvider"
-    
+``` 
     
 ## Copyright and License
 
